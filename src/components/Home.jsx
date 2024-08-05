@@ -16,7 +16,8 @@ const Home = () => {
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
             I am currently in my 4th year in Computer Science at The University
-            of British Columbia{" "}
+            of British Columbia. Currently working on my React and TailwindCSS
+            skills.
           </p>
 
           <div>
