@@ -13,19 +13,19 @@ function About() {
           </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id officiis
-          eaque, soluta rerum commodi iusto aliquam impedit itaque voluptates
-          veritatis saepe laboriosam maiores animi dignissimos dolorum sint
-          blanditiis quod possimus!
+          I'm an aspiring Software Engineer passionate about using technology to
+          help solve problems and create awesome projects! I'm currently working
+          on learning Full-Stack Development and looking for an internship.
         </p>
         <br />
         <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-          quibusdam debitis sequi nesciunt totam dolorum, iusto iure culpa
-          beatae quos obcaecati ab vel rerum fugiat qui, vitae accusamus harum
-          cupiditate nemo voluptatum dignissimos? Voluptate ducimus, vero
-          mollitia error ab ad aliquam! Rem nulla libero quod eius saepe, totam
-          quidem aliquid.
+          Besides technology and school, I have a variety of interests that keep
+          me active and balanced. I love playing basketball, which helps me stay
+          fit and sharpens my teamwork skills. Hiking is another passion of
+          mine; it allows me to explore nature and find inspiration away from
+          the screen. These activities, along with spending quality time with
+          friends and family, contribute to my well-rounded lifestyle and help
+          me stay motivated and refreshed.
         </p>
       </div>
     </div>

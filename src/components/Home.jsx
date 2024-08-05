@@ -2,6 +2,7 @@ import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import TypingAnimation from "./TypingAnimation";
 
 const Home = () => {
   return (
@@ -15,9 +16,10 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I am currently in my 4th year in Computer Science at The University
-            of British Columbia. Currently working on my React and TailwindCSS
-            skills.
+            <TypingAnimation
+              text="Hi! I'm currently in my 3rd year at the University of British Columbia majoring in Computer Science."
+              speed={100}
+            ></TypingAnimation>
           </p>
 
           <div>

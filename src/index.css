@@ -10,3 +10,9 @@
     font-family: "Raleway", sans-serif;
   }
 }
+
+@media (max-width: 1110px) {
+  .hide-on-width {
+    display: none !important;
+  }
+}
