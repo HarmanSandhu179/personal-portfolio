@@ -6,6 +6,8 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import node from "../assets/node.png";
+import cplus from "../assets/cplus.png";
 
 const Experience = () => {
   const techs = [
@@ -38,6 +40,18 @@ const Experience = () => {
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
+    },
+    {
+      id: 6,
+      src: node,
+      title: "Node",
+      style: "shadow-green-300",
+    },
+    {
+      id: 7,
+      src: cplus,
+      title: "C++",
+      style: "shadow-blue-500",
     },
     {
       id: 8,
