@@ -1,10 +1,17 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import TypingAnimation from "./TypingAnimation";
 
 const Home = () => {
+  function handleClick() {
+    window.open(
+      "https://drive.google.com/file/d/1I-1j7myJHcgj1nDeaXABPe-e8h3TbktP/view?usp=sharing",
+      "_blank"
+    );
+  }
+
   return (
     <div
       name="home"
@@ -23,7 +30,7 @@ const Home = () => {
           </p>
 
           <div>
-            <Link
+            {/* <Link
               to="portfolio"
               smooth
               duration={500}
@@ -33,7 +40,16 @@ const Home = () => {
               <span className="group-hover:rotate-90 duration-300">
                 <MdKeyboardArrowRight size={20} className="ml-1" />
               </span>
-            </Link>
+            </Link> */}
+            <button
+              onClick={() => handleClick()}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              Resume
+              <span className="group-hover:rotate-90 duration-300">
+                <MdKeyboardArrowRight size={20} className="ml-1" />
+              </span>
+            </button>
           </div>
         </div>
 

@@ -1,42 +1,55 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import allStar from "../assets/portfolio/allStar.jpg";
+import expenseTracker from "../assets/portfolio/expenseTracker.png";
+import schedule from "../assets/portfolio/schedule.jpg";
+import data from "../assets/portfolio/data.jpg";
 
 const Portfolio = () => {
+  function handleClick(link) {
+    if (link !== "none") {
+      window.open(link, "_blank");
+    }
+  }
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: allStar,
+      title: "All-Star Tutoring Website",
+      tools: ["React", "JS", "HTML", "CSS", "EmailJS"],
+      demoLink: "https://all-startutoring.netlify.app",
+      codeLink:
+        "https://github.com/HarmanSandhu179/all-star-tutoring-landing-page",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: expenseTracker,
+      title: "Expense Tracker",
+      tools: ["React", "MongoDB", "Express", "Node", "TailwindCSS"],
+      demoLink: "none",
+      codeLink:
+        "https://github.com/HarmanSandhu179/PersonalExpenseTracker/tree/main",
     },
     {
       id: 3,
-      src: navbar,
+      src: schedule,
+      title: "Scheduling App",
+      tools: ["Java", "JUnit", "JSON"],
+      demoLink: "none",
+      codeLink: "https://github.com/HarmanSandhu179/Scheduling-GUI",
     },
     {
       id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: data,
+      title: "Data Analysis",
+      tools: ["R"],
+      demoLink: "none",
+      codeLink: "https://github.com/HarmanSandhu179/DSCI-100-Group-Project",
     },
   ];
 
   return (
     <div
-      name="portfolio"
+      name="projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -48,21 +61,44 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, src, title, tools, demoLink, codeLink }) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg p-4">
+              <p className="font-bold text-gray-500 text-center">{title}</p>
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 w-full h-2/3"
               />
-              <div className="flex items-center justify-center">
+              <div className="grid grid-cols-3 gap-1 m-1">
+                {tools.map((tool) => (
+                  <p
+                    key={tool}
+                    className="bg-gray-500 rounded-md text-center overflow-hidden"
+                  >
+                    {tool}
+                  </p>
+                ))}
+                <button
+                  className="row-start-3 pb-2 duration-200 hover:scale-105"
+                  onClick={() => handleClick(demoLink)}
+                >
+                  Demo
+                </button>
+                <button
+                  className="row-start-3 pb-2 duration-200 hover:scale-105"
+                  onClick={() => handleClick(codeLink)}
+                >
+                  Code
+                </button>
+              </div>
+              {/* <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
