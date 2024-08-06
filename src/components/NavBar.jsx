@@ -69,7 +69,7 @@ const NavBar = () => {
                 to={link}
                 smooth
                 duration={500}
-                offset={link === "projects" ? -100 : -50}
+                offset={link === "projects" ? -100 : -70}
               >
                 {link}
               </Link>
