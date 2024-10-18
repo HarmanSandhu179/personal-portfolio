@@ -7,7 +7,7 @@ import TypingAnimation from "./TypingAnimation";
 const Home = () => {
   function handleClick() {
     window.open(
-      "https://drive.google.com/file/d/1I-1j7myJHcgj1nDeaXABPe-e8h3TbktP/view?usp=sharing",
+      "https://drive.google.com/file/d/1olcELysFHkbqI8XpnsBU7Or2aMPtVL6x/view?usp=sharing",
       "_blank"
     );
   }

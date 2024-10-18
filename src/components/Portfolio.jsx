@@ -1,6 +1,7 @@
 import React from "react";
 import allStar from "../assets/portfolio/allStar.jpg";
 import expenseTracker from "../assets/portfolio/expenseTracker.png";
+import cpsc from "../assets/portfolio/cpsc310-screenshot.png";
 import schedule from "../assets/portfolio/schedule.jpg";
 import data from "../assets/portfolio/data.jpg";
 
@@ -24,13 +25,22 @@ const Portfolio = () => {
       id: 2,
       src: expenseTracker,
       title: "Expense Tracker",
-      tools: ["React", "MongoDB", "Express", "Node", "TailwindCSS"],
+      tools: ["React", "MongoDB", "Express", "Node", "Tailwind"],
       demoLink: "none",
       codeLink:
         "https://github.com/HarmanSandhu179/PersonalExpenseTracker/tree/main",
     },
     {
       id: 3,
+      src: cpsc,
+      title: "InsightUBC Project",
+      tools: ["TypeScript", "React", "Express", "Tailwind"],
+      demoLink:
+        "https://drive.google.com/file/d/1BRPRRmRNWvuDSvtRWzAl5DsmAbcvdWpt/view",
+      codeLink: "none",
+    },
+    {
+      id: 4,
       src: schedule,
       title: "Scheduling App",
       tools: ["Java", "JUnit", "JSON"],
@@ -38,7 +48,7 @@ const Portfolio = () => {
       codeLink: "https://github.com/HarmanSandhu179/Scheduling-GUI",
     },
     {
-      id: 4,
+      id: 5,
       src: data,
       title: "Data Analysis",
       tools: ["R"],

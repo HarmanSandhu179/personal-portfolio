@@ -15,7 +15,8 @@ function About() {
         <p className="text-xl mt-20">
           I'm an aspiring Software Engineer passionate about using technology to
           help solve problems and create awesome projects! I'm currently working
-          on learning Full-Stack Development and looking for an internship.
+          on improving my Full-Stack Development skills and I'm an intern at
+          Goodself as a Software Developer.
         </p>
         <br />
         <p className="text-xl">
