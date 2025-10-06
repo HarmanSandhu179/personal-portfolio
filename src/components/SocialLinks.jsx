@@ -40,9 +40,8 @@ function SocialLinks() {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "https://drive.google.com/file/d/1mUALgAX8go-PHBOnTeT-DT-XoQ_1LsjS/view?usp=share_link",
       style: "rounded-br-md",
-      download: true,
     },
   ];
 

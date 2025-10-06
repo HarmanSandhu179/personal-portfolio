@@ -2,9 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
-    fontFamily: {
-      signature: ["Great Vibes"],
+    extend: {
+      fontFamily: {
+        // add your new modern font here
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

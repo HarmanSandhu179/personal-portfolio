@@ -7,7 +7,7 @@ import TypingAnimation from "./TypingAnimation";
 const Home = () => {
   function handleClick() {
     window.open(
-      "https://drive.google.com/file/d/1olcELysFHkbqI8XpnsBU7Or2aMPtVL6x/view?usp=sharing",
+      "https://drive.google.com/file/d/1mUALgAX8go-PHBOnTeT-DT-XoQ_1LsjS/view?usp=share_link",
       "_blank"
     );
   }
@@ -20,7 +20,7 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row gap-3">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
+           Harman Sandhu
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
             <TypingAnimation

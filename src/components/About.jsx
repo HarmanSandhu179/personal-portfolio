@@ -13,20 +13,28 @@ function About() {
           </p>
         </div>
         <p className="text-xl mt-20">
-          I'm an aspiring Software Engineer passionate about using technology to
-          help solve problems and create awesome projects! I'm currently working
-          on improving my Full-Stack Development skills and I'm an intern at
-          Goodself as a Software Developer.
+          I’m a passionate Software Engineer focused on building efficient,
+          real-world solutions that blend technical precision with practical
+          impact. Most recently, I interned at Ontraccr Technologies, where I
+          implemented real-time collaboration systems, PDF generation pipelines,
+          and automated equipment-hour tracking—contributing to a smoother
+          experience for teams working in high-traffic environments.
         </p>
         <br />
         <p className="text-xl">
-          Besides technology and school, I have a variety of interests that keep
-          me active and balanced. I love playing basketball, which helps me stay
-          fit and sharpens my teamwork skills. Hiking is another passion of
-          mine; it allows me to explore nature and find inspiration away from
-          the screen. These activities, along with spending quality time with
-          friends and family, contribute to my well-rounded lifestyle and help
-          me stay motivated and refreshed.
+          Before that, I worked at Goodself, rebuilding responsive marketing
+          sites and leading QA from development through production. I also built
+          and sold a full-stack application, LeaserFlow, to a trucking company
+          an experience that strengthened my full-stack skills and taught me how
+          to build software that truly solves business problems.
+        </p>
+        <br />
+        <p className="text-xl">
+          Outside of tech, I value staying active and balanced. Playing
+          basketball keeps me fit and sharpens my teamwork and focus, while
+          hiking and spending time outdoors help me recharge and think
+          creatively. I enjoy taking the same growth mindset I use in sports and
+          applying it to software—constantly learning, iterating, and improving.
         </p>
       </div>
     </div>
