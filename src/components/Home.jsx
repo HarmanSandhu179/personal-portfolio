@@ -1,67 +1,63 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
-// import { Link } from "react-scroll";
 import TypingAnimation from "./TypingAnimation";
 
 const Home = () => {
   function handleClick() {
     window.open(
       "https://drive.google.com/file/d/1mUALgAX8go-PHBOnTeT-DT-XoQ_1LsjS/view?usp=share_link",
-      "_blank"
+      "_blank",
+      "noopener,noreferrer"
     );
   }
 
   return (
-    <div
+    <section
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row gap-3">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-           Harman Sandhu
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            <TypingAnimation
-              text="Hi! I'm currently in my 3rd year at the University of British Columbia majoring in Computer Science."
-              speed={100}
-            ></TypingAnimation>
-          </p>
+      <div className="h-screen flex items-center justify-center px-6">
+        <div className="max-w-screen-lg w-full flex flex-col-reverse md:flex-row items-center justify-center gap-10">
+          {/* --- Left Side --- */}
+          <div className="flex flex-col justify-center text-center md:text-left w-full md:w-1/2">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+              Harman <br className="hidden sm:block" /> Sandhu
+            </h1>
 
-          <div>
-            {/* <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdKeyboardArrowRight size={20} className="ml-1" />
-              </span>
-            </Link> */}
-            <button
-              onClick={() => handleClick()}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Resume
-              <span className="group-hover:rotate-90 duration-300">
-                <MdKeyboardArrowRight size={20} className="ml-1" />
-              </span>
-            </button>
+            {/* ✅ Reserve space for typing text so layout doesn't shift */}
+            <div className="text-gray-400 mt-4 max-w-md mx-auto md:mx-0 text-base sm:text-lg min-h-[4.5rem] sm:min-h-[3.5rem]">
+              <TypingAnimation
+                text="Hi! I'm currently in my 3rd year at the University of British Columbia majoring in Computer Science."
+                speed={100}
+              />
+            </div>
+
+            <div className="mt-6 flex justify-center md:justify-start">
+              <button
+                onClick={handleClick}
+                className="group text-white px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"
+              >
+                Resume
+                <span className="group-hover:rotate-90 duration-300">
+                  <MdKeyboardArrowRight size={20} className="ml-1" />
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* --- Right Side (Fixed Image) --- */}
+          <div className="flex justify-center md:justify-end w-full md:w-1/2">
+            <img
+              src={HeroImage}
+              alt="Portrait of Harman Sandhu"
+              className="rounded-2xl w-56 sm:w-72 md:w-96 object-cover shadow-lg"
+              loading="lazy"
+            />
           </div>
         </div>
-
-        <div>
-          <img
-            src={HeroImage}
-            alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
