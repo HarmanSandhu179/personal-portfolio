@@ -8,16 +8,22 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
 import cplus from "../assets/cplus.png";
+import ts from "../assets/typescript.png";
+import aws from "../assets/aws.png";
+import mysql from "../assets/mysql.svg";
 
 const techs = [
   { id: 1, src: html, title: "HTML" },
   { id: 2, src: css, title: "CSS" },
   { id: 3, src: javascript, title: "JavaScript" },
-  { id: 4, src: reactImage, title: "React" },
-  { id: 5, src: tailwind, title: "Tailwind" },
-  { id: 6, src: node, title: "Node" },
-  { id: 7, src: cplus, title: "C++" },
-  { id: 8, src: github, title: "GitHub" },
+  { id: 4, src: ts, title: "TypeScript" },
+  { id: 5, src: reactImage, title: "React" },
+  { id: 6, src: tailwind, title: "Tailwind" },
+  { id: 7, src: node, title: "Node" },
+  { id: 8, src: cplus, title: "C++" },
+  { id: 9, src: github, title: "GitHub" },
+  { id: 10, src: aws, title: "AWS" },
+  { id: 11, src: mysql, title: "MySQL" },
 ];
 
 const ToolCard = ({ src, title }) => (
@@ -27,13 +33,17 @@ const ToolCard = ({ src, title }) => (
                hover:border-sky-400/40 hover:shadow-[0_0_0_1px_rgba(56,189,248,0.25),0_10px_30px_-10px_rgba(0,0,0,0.6)]
                transition-all duration-300 p-5 flex flex-col items-center"
   >
-    <img
-      src={src}
-      alt={title}
-      className="w-16 sm:w-20 md:w-24 h-auto object-contain opacity-90 transition duration-300 group-hover:opacity-100"
-      loading="lazy"
-      decoding="async"
-    />
+    {/* Fixed-size wrapper to keep all icons centered */}
+    <div className="h-20 w-20 flex items-center justify-center">
+      <img
+        src={src}
+        alt={title}
+        className="max-h-full max-w-full object-contain opacity-90 transition duration-300 group-hover:opacity-100"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
     <p className="mt-3 text-sm sm:text-base text-gray-200">{title}</p>
 
     <span
