@@ -28,7 +28,7 @@ function About() {
             <p>
               Before that, I worked at Goodself, rebuilding responsive marketing
               sites and leading QA from development through production. I also
-              built and sold a full-stack application, LeaserFlow—an experience
+              built and sold a full-stack applicationLeaser flow. An experience
               that strengthened my full-stack skills and taught me how to ship
               software that truly solves business problems.
             </p>
@@ -37,7 +37,7 @@ function About() {
               Outside of tech, I value staying active and balanced. Basketball
               keeps me sharp on teamwork and focus, while hiking helps me
               recharge and think creatively. I bring that same growth mindset to
-              software— constantly learning, iterating, and improving.
+              software, constantly learning, iterating, and improving.
             </p>
           </div>
         </div>

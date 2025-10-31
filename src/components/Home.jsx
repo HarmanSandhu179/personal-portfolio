@@ -1,12 +1,12 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/me.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import TypingAnimation from "./TypingAnimation";
 
 const Home = () => {
   function handleClick() {
     window.open(
-      "https://drive.google.com/file/d/1mUALgAX8go-PHBOnTeT-DT-XoQ_1LsjS/view?usp=share_link",
+      "https://drive.google.com/file/d/1gTdM1ZPexwK9pf_ae6SKqIwBKw-xwzFl/view?usp=share_link",
       "_blank",
       "noopener,noreferrer"
     );
@@ -28,7 +28,7 @@ const Home = () => {
             {/* ✅ Reserve space for typing text so layout doesn't shift */}
             <div className="text-gray-400 mt-4 max-w-md mx-auto md:mx-0 text-base sm:text-lg min-h-[4.5rem] sm:min-h-[3.5rem]">
               <TypingAnimation
-                text="Hi! I'm currently in my 3rd year at the University of British Columbia majoring in Computer Science."
+                text="Hi! I'm currently in my 4th year at the University of British Columbia majoring in Computer Science."
                 speed={100}
               />
             </div>

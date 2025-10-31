@@ -13,9 +13,9 @@ import leaser from "../assets/portfolio/leaser.png";
 const PROJECTS = [
   {
     id: 1,
-    title: "LeaserFlow",
+    title: "LeaserFlow (ACQUIRED)",
     description:
-      "Full-stack app to streamline truck leasing, with lead tracking and automated lease management.",
+      "Full-stack app acquired by a trucking company to streamline truck leasing, with lead tracking and automated lease management. **Source Code Available Upon Request**",
     cover: leaser,
     tech: ["React", "TypeScript", "Hapi.js", "MySQL", "Prisma", "AWS"],
     demo: "https://leaserflow.com",
@@ -122,7 +122,7 @@ const ProjectCard = ({ p }) => (
     {/* Body */}
     <div className="p-5">
       <h3 className="text-lg font-semibold tracking-tight">{p.title}</h3>
-      <p className="mt-2 text-sm text-gray-400 line-clamp-2">{p.description}</p>
+      <p className="mt-2 text-sm text-gray-400 line-clamp-4">{p.description}</p>
 
       <div className="mt-3 flex flex-wrap gap-2">
         {p.tech.map((t) => (
