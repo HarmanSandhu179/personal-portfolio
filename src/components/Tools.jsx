@@ -9,6 +9,7 @@ import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
 import cplus from "../assets/cplus.png";
 import ts from "../assets/typescript.png";
+import java from "../assets/java.jpeg";
 import aws from "../assets/aws.png";
 import mysql from "../assets/mysql.svg";
 
@@ -21,9 +22,10 @@ const techs = [
   { id: 6, src: tailwind, title: "Tailwind" },
   { id: 7, src: node, title: "Node" },
   { id: 8, src: cplus, title: "C++" },
-  { id: 9, src: github, title: "GitHub" },
-  { id: 10, src: aws, title: "AWS" },
-  { id: 11, src: mysql, title: "MySQL" },
+  { id: 9, src: java, title: "Java" },
+  { id: 10, src: github, title: "GitHub" },
+  { id: 11, src: aws, title: "AWS" },
+  { id: 12, src: mysql, title: "MySQL" },
 ];
 
 const ToolCard = ({ src, title }) => (
