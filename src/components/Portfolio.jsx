@@ -8,6 +8,7 @@ import cpsc from "../assets/portfolio/cpsc310-screenshot.png";
 import schedule from "../assets/portfolio/schedule.jpg";
 import data from "../assets/portfolio/data.jpg";
 import leaser from "../assets/portfolio/leaser.png";
+import dns from "../assets/portfolio/dns.png";
 
 // ---- Data -------------------------------------------------------
 const PROJECTS = [
@@ -23,6 +24,16 @@ const PROJECTS = [
   },
   {
     id: 2,
+    title: "DNS Lookup Service",
+    description:
+      "Implemented a DNS lookup service over UDP in Java, handling name server selection, retries, and timeouts. Built DNS message construction and parsing for A, AAAA, NS, CNAME, and MX records with CNAME chain resolution and depth limits. Exposed the resolver via a Spring Boot REST API and deployed using Docker and Vercel.",
+    cover: dns,
+    tech: ["Java", "Spring Boot", "React", "TypeScript", "Docker"],
+    demo: "https://lookup.harmansandhu.dev",
+    code: null,
+  },
+  {
+    id: 3,
     title: "All-Star Tutoring Website",
     description:
       "Responsive landing page with contact flow and reusable components.",
@@ -32,7 +43,7 @@ const PROJECTS = [
     code: "https://github.com/HarmanSandhu179/all-star-tutoring-landing-page",
   },
   {
-    id: 3,
+    id: 4,
     title: "Expense Tracker",
     description:
       "Personal finance tracker with CRUD, categories, and analytics.",
@@ -42,7 +53,7 @@ const PROJECTS = [
     code: "https://github.com/HarmanSandhu179/PersonalExpenseTracker/tree/main",
   },
   {
-    id: 4,
+    id: 5,
     title: "InsightUBC Project",
     description:
       "CPSC 310 project for querying large datasets with a typed API.",
@@ -52,7 +63,7 @@ const PROJECTS = [
     code: null,
   },
   {
-    id: 5,
+    id: 6,
     title: "Scheduling App",
     description: "Desktop scheduler with persistence and unit tests.",
     cover: schedule,
@@ -61,7 +72,7 @@ const PROJECTS = [
     code: "https://github.com/HarmanSandhu179/Scheduling-GUI",
   },
   {
-    id: 6,
+    id: 7,
     title: "Data Analysis",
     description: "Exploratory data analysis and reporting.",
     cover: data,
