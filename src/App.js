@@ -10,8 +10,21 @@ function App() {
     <div>
       <NavBar></NavBar>
       <Home></Home>
+      {/* Smooth visual transition between sections */}
+      <div
+        aria-hidden="true"
+        className="h-10 sm:h-12 md:h-14 w-full bg-gradient-to-b from-gray-800 to-black"
+      />
       <Experience></Experience>
+      <div
+        aria-hidden="true"
+        className="h-10 sm:h-12 md:h-14 w-full bg-gradient-to-b from-gray-900 to-black"
+      />
       <Portfolio></Portfolio>
+      <div
+        aria-hidden="true"
+        className="h-10 sm:h-12 md:h-14 w-full bg-gradient-to-b from-gray-900 to-gray-800"
+      />
       <Tools></Tools>
       <SocialLinks></SocialLinks>
     </div>
